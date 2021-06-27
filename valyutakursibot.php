@@ -57,7 +57,7 @@ Rasmiy kanal: @kholdorjonov_news",
 if ($data == 'valyuta') {
 
 
-$a = file_get_contents("nbu.valyuta.uz.html");
+$a = file_get_contents("https://nbu.uz/uz/exchange-rates/");
 $a = explode("\n", $a);
 $dollar_mb = $a[606];
 $dollar_mb = str_replace("<td>", "", $dollar_mb);
