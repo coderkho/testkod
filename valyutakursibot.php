@@ -1,7 +1,7 @@
 <?php
 
 
-$API_KEY = '794321267:AAGwDBzA2SIRJ4g6UQA1h7L1DuNU';
+$API_KEY = '1893072132:AAF0DTy3834Apb4c9E1qZRUSzplI51Ys_Sc';
 
 define('API_KEY',$API_KEY);
 function bot($method,$datas=[]){
@@ -17,7 +17,7 @@ function bot($method,$datas=[]){
         return json_decode($res);
     }
 }
-$admin = "572730244"; 
+$admin = "1682992940"; 
 $update = json_decode(file_get_contents('php://input'));
 $message = $update->message;
 $from_id = $message->from->id;
